@@ -58,6 +58,19 @@ async def rastgele_cızgıemoji(ctx):
     await ctx.send(cızgı_emoji)
 
 
+@bot.command()
+async def sifre_uret(ctx, uzunluk: int):
+    if 1 <= uzunluk <= 10:
+        karakterler = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+        sifre = ''.join(random.choice(karakterler) for _ in range(uzunluk))
+        await ctx.send(f" Rastgele şifren: `{sifre}`")
+    else:
+        await ctx.send("Lütfen 1 ile 10 arasında bir sayı gir.")
+
+
+
+
 bot.run("")
+
 
 

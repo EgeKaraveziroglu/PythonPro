@@ -51,10 +51,13 @@ async def rastgele_emoji(ctx):
     emoji=random.choice(emojiler)
     await ctx.send(emoji)
 
-
-
-
+@bot.command()
+async def rastgele_cızgıemoji(ctx):
+    cızgı_emojiler=["(─ ‿ ─)", "(づ๑•ᴗ•๑)づ♡", "⇄ ◀ 𓊕 ▶ ↻", "︶ ⏝ ︶ ୨୧ ︶ ⏝ ︶", "࿔‧ ֶָ֢˚˖𐦍˖˚ֶָ֢ ‧࿔", "ᓚ₍⑅^..^₎", "/ᐠ˵- ⩊ -˵マ", "(๑>؂•̀๑)", "/ᐠ˵- ⩊ -˵マ"]
+    cızgı_emoji=random.choice(cızgı_emojiler)
+    await ctx.send(cızgı_emoji)
 
 
 bot.run("")
+
 

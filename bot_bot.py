@@ -44,4 +44,17 @@ async def mem(ctx):
    # Daha sonra bu dosyayı bir parametre olarak gönderebiliriz!
     await ctx.send(file=picture)
 
+
+@bot.command()
+async def rastgele_emoji(ctx):
+    emojiler=["😀", "😃", "😁", "🤬", "🥳", "👾", "🎃", "🤑", "🤔"]
+    emoji=random.choice(emojiler)
+    await ctx.send(emoji)
+
+
+
+
+
+
 bot.run("")
+
